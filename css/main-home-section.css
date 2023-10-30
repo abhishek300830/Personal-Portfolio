@@ -1,0 +1,245 @@
+
+body{
+    background-color: #0f1624;
+    color:white;
+    font-family: Montserrat;
+    font-weight: 400;
+}
+
+.navbar{
+    background-image: linear-gradient(to right top, #0f1624, #0f1727, #0f192a, #101a2e, #101b31, #101b31, #101b31, #101b31, #101a2e, #0f192a, #0f1727, #0f1624);
+    display: flex;
+    font-size: 17px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1% 8%;
+    padding: 5px 10px 5px 15px;
+    border-radius: 50px;
+    box-shadow: 0px 2px 4px 4px rgba(0, 0, 0, 0.1);
+
+}
+.navbar-list{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 0px 2px;
+    position: relative;
+}
+.nav-item{
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+.nav-item::after{
+    content: "";
+    height: 2px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(to right, #cb53e9, #b15eec, #9566ec, #7a6ce9, #5d70e4, #5178e5, #457fe5, #3c85e4, #4692eb, #519ff2, #5eacf9, #6cb9ff);
+    
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.nav-item:hover{
+    color: white;
+    font-weight: 500;
+}
+.nav-item:hover::after{
+    width: 100%;
+    left: 0;
+}
+
+.nav-item.active{
+    font-weight: 500;
+}
+
+.contactme-btn{
+    border: 1px solid white;
+    padding: 10px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+    font-family: poppins;
+
+
+}
+
+.contactme-btn:hover {
+    background-image: linear-gradient(to right, #cb53e9, #b15eec, #9566ec, #7a6ce9, #5d70e4, #5178e5, #457fe5, #3c85e4, #4692eb, #519ff2, #5eacf9, #6cb9ff);
+    box-shadow: 0px 2px 4px 4px rgba(90, 168, 246, 0.2);
+    border: none;   
+}
+.contactme-btn:Active{
+    scale: .9;
+}
+
+.logo{
+    font-family: Marck Script;
+    font-size: 24px;
+
+}
+.logo:hover{
+    background-image: linear-gradient(to right, #cb53e9, #b15eec, #9566ec, #7a6ce9, #5d70e4, #5178e5, #457fe5, #3c85e4, #4692eb, #519ff2, #5eacf9, #6cb9ff);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    cursor: default;
+}
+
+/* main container */
+
+.main-container{
+    height: auto;
+    width: 80%;
+    margin: auto;
+    position: relative;
+}
+
+.hollow-circle{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(to right, #cb53e9, #b15eec, #9566ec, #7a6ce9, #5d70e4, #5178e5, #457fe5, #3c85e4, #4692eb, #519ff2, #5eacf9, #6cb9ff);
+    border-radius: 50%;
+    top: 128px;
+    right: 20%;
+    z-index: -1;
+}
+.cover-circle{
+    position: absolute;
+    width: 490px;
+    height: 490px;
+    background-color: #0f1624;
+    border-radius: 50%;
+    top: 135px;
+    right: 22%;
+    z-index: -1;
+    animation: cover-circle-animation 5s infinite;
+
+}
+@keyframes cover-circle-animation{
+    50%{
+        transform: translate(20px);
+    }
+
+}
+.fill-circle{
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(to right, #cb53e9, #b15eec, #9566ec, #7a6ce9, #5d70e4, #5178e5, #457fe5, #3c85e4, #4692eb, #519ff2, #5eacf9, #6cb9ff);
+}
+.fill-circle-1{
+    top: 10%;
+    left: 1%;
+    width: 50px;
+    height: 50px;
+    animation: fill-circle-animation 2s infinite;
+
+    
+}
+.fill-circle-2{
+    width: 150px;
+    height: 150px;
+    top: 450px;
+    right: 20%;
+    box-shadow: 0px 4px 8px 8px rgba(28, 141, 255,.2);
+    animation: fill-circle-animation 3s linear infinite;
+    
+}
+@keyframes fill-circle-animation {
+    0%{
+        scale: 1;
+        transform: rotate(360deg)
+    }
+    50%{
+        scale: .9;
+    }
+    100%{
+        scale: 1;
+        transform: rotate(0deg)
+    }
+}
+.home-section{
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+.profile-details{
+    padding: 10%;
+    display: flex;
+    margin-top: 5%;
+    flex-direction: column;
+    color: rgba(255, 255, 255, 0.711);
+}
+.profile-name{
+    font-family: Secular One;
+    background-image: linear-gradient(to right, #cb53e9, #b15eec, #9566ec, #7a6ce9, #5d70e4, #5178e5, #457fe5, #3c85e4, #4692eb, #519ff2, #5eacf9, #6cb9ff);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 70px;
+    line-height: 1.2;
+    animation-name: profile-name-animation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    transition: 4s All;
+}
+
+.profile-role{
+    font-family: Secular One;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+@keyframes profile-name-animation {
+    
+    50%{
+        background-image: linear-gradient(to right,  #5d70e4, #5178e5, #457fe5, #3c85e4,#cb53e9, #b15eec, #9566ec, #7a6ce9, #4692eb, #519ff2, #5eacf9, #6cb9ff);
+    }
+    100%{
+        background-image: linear-gradient(to right, #4692eb, #519ff2, #5eacf9, #6cb9ff, #5d70e4, #5178e5, #457fe5, #3c85e4,#cb53e9, #b15eec, #9566ec, #7a6ce9);
+        
+    }
+    
+}
+.profile-bio{
+    margin-top: -5px;
+    font-family: Montserrat;
+}
+.download-cv-btn{
+    color: white;
+    background-image: linear-gradient(to right, #cb53e9, #b15eec, #9566ec, #7a6ce9, #5d70e4, #5178e5, #457fe5, #3c85e4, #4692eb, #519ff2, #5eacf9, #6cb9ff);
+    font-family: poppins;
+    font-weight: 600;
+    font-size: 15px;
+    width: 30%;
+    padding: 16px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0px 2px 4px 4px rgba(90, 168, 246, 0.2);
+    transition: all .3s;
+    margin-top: 30px;
+}
+.download-cv-btn:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+.download-cv-btn:active{
+    scale: .9;
+
+}
+.profile-picture{
+    display: flex;
+    margin-top: 20%;
+    
+}
+.profile-picture img{
+    height: 300px;
+    width: 300px;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: #0f1624;
+    filter: brightness(.8);
+}
