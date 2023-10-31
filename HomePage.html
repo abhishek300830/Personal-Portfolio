@@ -4,9 +4,15 @@
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Portfolio | Abhishek Kumar</title>
+      <link rel="stylesheet" href="./css/common.css" />
       <link rel="stylesheet" href="./css/main-home-section.css" />
       <link rel="stylesheet" href="./css/skills-section.css" />
+      <link rel="stylesheet" href="./css/project-section.css" />
+      <link rel="stylesheet" href="./css/footer.css" />
+      <link rel="stylesheet" href="./css/contact-me.css">
+      <link rel="stylesheet" href="./css/blogs.css">
       <script src="script.js"></script>
+      <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
       <!-- fontawesome -->
       <link
          rel="stylesheet"
@@ -15,15 +21,7 @@
          crossorigin="anonymous"
          referrerpolicy="no-referrer"
       />
-      <!-- font -->
-      <!-- 
-         font-family: 'Marck Script', cursive;
-         font-family: 'Monoton', sans-serif;
-         font-family: 'Montserrat', sans-serif;
-         font-family: 'Poppins', sans-serif;
-         font-family: 'Secular One', sans-serif;
-
-       -->
+      <!-- fonts -->
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
       <link
@@ -41,9 +39,11 @@
                <div><a class="nav-item" href="#skills">Skills</a></div>
                <div><a class="nav-item" href="#projects">Projects</a></div>
                <div><a class="nav-item" href="#blogs">Blog</a></div>
-               <div><a class="nav-item" href="#about">About</a></div>
+               <!-- <div><a class="nav-item" href="#about">About</a></div> -->
             </ul>
-            <div class="contactme-btn">Contact Me</div>
+            <a href="#contact-me" class="contactme-btn">
+               <div class="">Contact Me</div>
+            </a>
          </nav>
       </header>
       <!-- Navbar ends -->
@@ -62,9 +62,15 @@
                   An Innovative and Meticulous Full Stack Developer with an
                   exceptional command over Modern Web Technologies.
                </p>
-               <button type="button" class="download-cv-btn">
-                  Download CV
-               </button>
+               <a href="./assets/Abhishek Kumar Resume.pdf" download>
+                  <button
+                     type="button"
+                     class="download-cv-btn"
+                     onclick="downloadResume()"
+                  >
+                     Download CV
+                  </button>
+               </a>
             </div>
             <div class="profile-picture">
                <img src="./assets/profile-cropped.png" alt="pic not loaded" />
@@ -72,35 +78,140 @@
          </section>
          <!-- Home section ends -->
          <!-- Skills section starts -->
-         <section class="skills-section" id="skills">Skills</section>
+         <section class="section" id="skills">
+            <div class="section-heading skill-section">My Skills</div>
+            <hr />
+            <div class="skills-container">
+               <div class="skill">
+                  <img src="./assets/Skills/React.png" alt="" />
+               </div>
+               <div class="skill js">
+                  <img src="./assets/Skills/js.png" alt="" />
+               </div>
+               <div class="skill">
+                  <img src="./assets/Skills/python.png" alt="" />
+               </div>
+               <div class="skill">
+                  <img src="./assets/Skills/Git.svg" alt="" />
+               </div>
+               <div class="skill">
+                  <img src="./assets/Skills/HTML.png" alt="" />
+               </div>
+               <div class="skill">
+                  <img src="./assets/Skills/CSS.png" alt="" />
+               </div>
+               <div class="skill">
+                  <img src="./assets/Skills/material-ui-logo.png" alt="" />
+               </div>
+               <div class="skill">
+                  <img src="./assets/Skills/Tailwind.png" alt="" />
+               </div>
+               <div class="skill">
+                  <img src="./assets/Skills/bootstrap-5-logo.png" alt="" />
+               </div>
+
+               <div class="skill postman">
+                  <img src="./assets/Skills/postman.png" alt="" />
+               </div>
+               <div class="skill">
+                  <img src="./assets/Skills/adobe-photoshop.png" alt="" />
+               </div>
+               <div class="skill">
+                  <img src="./assets/Skills/mongodb-logo.png" alt="" />
+               </div>
+            </div>
+         </section>
          <!-- Skills section ends -->
          <!-- projects section starts -->
-         <section class="projects-section" id="projects">Projects</section>
+         <section class="section" id="projects">
+            <div class="section-heading">Projects</div>
+            <hr />
+            <div class="iframe-container">
+               <div class="left-arrow" id="left-arrow">
+                  <i class="fas fa-chevron-left"></i>
+               </div>
+               <div class="project-iframe">
+                  <iframe
+                     class="iframe"
+                     src="https://abhishek300830.github.io/BuildersHut-MERN-Stack-Application/"
+                     frameborder="0"
+                     id="project-frame-1"
+                  ></iframe>
+                  <iframe
+                  class="iframe"
+                  src="https://fanciful-dieffenbachia-286946.netlify.app/"
+                  frameborder="0"
+                  id="project-frame-3"
+               ></iframe>
+                  <iframe
+                  class="iframe"
+                     src="https://young-paste.surge.sh"
+                     frameborder="0"
+                     id="project-frame-2"
+                  ></iframe>
+                  
+                  
+               </div>
+               <div class="right-arrow" id="right-arrow">
+                  <i class="fas fa-chevron-right"></i>
+               </div>
+            </div>
+         </section>
          <!-- projects section ends -->
          <!-- blogs section starts -->
-         <section class="blog-section" id="blogs">blogs</section>
+         <section class="section" id="blogs">
+            <div class="section-heading">My Blogs</div>
+            <hr />
+            <div class="blogs-container">
+               <div class="blog">
+                  <div class='sk-ww-medium-publication-feed' data-embed-id='218097'></div>
+               </div>
+               <div class="blog"></div>
+            </div>
+         </section>
          <!-- blog section ends -->
          <!-- about section starts -->
-         <section class="about-section" id="about">About</section>
+         <section class="section" id="contact-me">
+            <div class="section-heading">Contact Me</div>
+            <hr />
+            <div class="contact-container">
+               <div class="contact-form">
+                  <input type="text" name="name" id="name" placeholder="Enter Your Name">
+                  <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter Your Message..."></textarea>
+                  <button type="button" onclick="sendTelegramMessage()">Send Message <i class="fas fa-paper-plane"></i></button>
+               </div>
+               <div class="contact-image">
+                  <img src="./assets/contact-me.svg" alt="">
+               </div>
+            </div>
+         </section>
          <!-- about section ends -->
       </div>
       <!-- All sections Container ends -->
-      <!-- <footer>Footer</footer> -->
+      <footer>
+         <div class="footer-container">
+            <div class="footer-sub-heading">Feel Free to Contact</div>
+            <div class="footer-email"><a href="mailto:abhishek300830@gmail.com">
+               <i class="fas fa-envelope"></i> Abhishek300830@gmail.com
+            </a></div>
+            <div class="social-handles">
+               <a href="https://www.linkedin.com/in/abhishek3008/ target="_blank"
+                  ><i class="fab fa-linkedin"></i>
+               </a>
+               <a href="https://github.com/abhishek300830" target="_blank"
+                  ><i class="fab fa-github-square"></i>
+               </a>
+               <a href="https://x.com/Abhi_gurjarrr?t=P7RkfMoSJy9EwEccimSijg&s=09" target="_blank"
+                  ><i class="fab fa-twitter-square"></i
+               ></a>
+            </div>
+         </div>
+      </footer>
+      <script src="./js/script.js"></script>
       <!-- Typing Role Script starts -->
       <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-      <script>
-         var typeData = new Typed(".role", {
-            strings: [
-               "Full Stack Developer",
-               "Competitve Programmer",
-               "Java Developer",
-            ],
-            loop: true,
-            typeSpeed: 100,
-            backSpeed: 80,
-            backDelay: 1000,
-         });
-      </script>
-      <!-- Typing Role Script ends -->
+      <!-- script for loading Medium Blogs -->
+      <script src='https://widgets.sociablekit.com/medium-publication-feed/widget.js' async defer></script>
+
    </body>
 </html>

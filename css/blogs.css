@@ -1,0 +1,31 @@
+.medium-publication-feed-root-container{
+    display: none;
+}
+.sk-medium-publication-feed-container{
+    background-color: #0f1624;
+    padding: 50px 60px;
+}
+
+
+.sk_medium_publication_content img{
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+}
+.sk-read-more-btn{
+    width: 35%;
+    font-family: poppins;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 14px;
+    border-radius: 50px !important;
+    border: none;
+    box-shadow: 0px 2px 4px 4px rgba(90, 168, 246, 0.2);
+    transition: all .3s;
+    align-self: center;
+    transition: all .3s;
+}
+.sk-read-more-btn:hover{
+    background-image: linear-gradient(to right, #cb53e9, #b15eec, #9566ec, #7a6ce9, #5d70e4, #5178e5, #457fe5, #3c85e4, #4692eb, #519ff2, #5eacf9, #6cb9ff);
+
+}

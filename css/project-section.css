@@ -1,0 +1,49 @@
+.project-section{
+    width: 80vw;
+}
+.project-iframe{
+    /* text-align: center; */
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.project-iframe iframe{
+    border-radius: 10px;
+    width: 98%;
+    height:80vh;
+
+}
+
+.iframe-container{
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    justify-content: center;
+    align-items: center;
+
+}
+.iframe-container div{
+    text-align: center;
+    font-size: 30px;
+}
+.iframe-container div i{
+    transition: all .2s;
+}
+.iframe-container div i:hover{
+    scale: 1.3;
+    cursor: pointer;
+
+}
+.iframe-container div i:active{
+    background-color: white;
+    color: black;
+
+}
+.iframe-container div i:hover{
+    scale: 1.3;
+}
+#project-frame-2{
+    display: none;
+}
+#project-frame-3{
+    display: none;
+    background-color: white;
+}

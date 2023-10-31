@@ -1,4 +1,26 @@
-.skills-section{
-    /* height: 90vh;
-    background-color: bisque; */
+
+.skills-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    gap: 100px;
+    padding: 0px 100px;
+    margin-top: 40px;
+}
+.skill img{
+    width: 100px;
+    height: 100px;
+    transition: all .3s;
+}
+.skill img:hover{
+    scale: 1.2;
+}
+.js img{
+    width: 120px;
+    height: 120px;
+}
+.postman img{
+    width: 140px;
+    height: 140px;
+    margin-top: -15px;
 }

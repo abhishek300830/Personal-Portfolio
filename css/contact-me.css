@@ -1,0 +1,64 @@
+#contact-me{
+    min-height: 90vh;
+}
+.contact-container{
+    display: grid;
+    grid-template-columns: 55% 45%;
+}
+.contact-form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 60px;
+    gap: 30px;
+
+}
+.contact-form input{
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 20px;
+}
+.contact-form textarea{
+    resize: none;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 10px;
+    padding: 20px;
+}
+.contact-form button{
+    width: 50%;
+    font-family: poppins;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 16px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0px 2px 4px 4px rgba(90, 168, 246, 0.2);
+    transition: all .3s;
+    align-self: center;
+    transition: all .3s;
+
+}
+.contact-form button:hover{
+    color: white;
+    background-image: linear-gradient(to right, #cb53e9, #b15eec, #9566ec, #7a6ce9, #5d70e4, #5178e5, #457fe5, #3c85e4, #4692eb, #519ff2, #5eacf9, #6cb9ff);
+
+}
+.contact-form button:active{
+    scale: .9;
+
+}
+.contact-form button i{
+    font-size: 20px;
+    margin-left: 5px;
+}
+.contact-image{
+    margin-top: 50px;
+
+}
+.contact-image img{
+    width:100%;
+}
