@@ -1,0 +1,4 @@
+create a config.js file
+
+export const botToken =  "YOU BOT TOKEN HERE"
+export const chatId = "YOUR CHAT ID"

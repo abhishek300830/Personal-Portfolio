@@ -9,9 +9,8 @@
       <link rel="stylesheet" href="./css/skills-section.css" />
       <link rel="stylesheet" href="./css/project-section.css" />
       <link rel="stylesheet" href="./css/footer.css" />
-      <link rel="stylesheet" href="./css/contact-me.css">
-      <link rel="stylesheet" href="./css/blogs.css">
-      <script src="script.js"></script>
+      <link rel="stylesheet" href="./css/contact-me.css" />
+      <link rel="stylesheet" href="./css/blogs.css" />
       <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
       <!-- fontawesome -->
       <link
@@ -138,19 +137,17 @@
                      id="project-frame-1"
                   ></iframe>
                   <iframe
-                  class="iframe"
-                  src="https://fanciful-dieffenbachia-286946.netlify.app/"
-                  frameborder="0"
-                  id="project-frame-3"
-               ></iframe>
+                     class="iframe"
+                     src="https://fanciful-dieffenbachia-286946.netlify.app/"
+                     frameborder="0"
+                     id="project-frame-3"
+                  ></iframe>
                   <iframe
-                  class="iframe"
+                     class="iframe"
                      src="https://young-paste.surge.sh"
                      frameborder="0"
                      id="project-frame-2"
                   ></iframe>
-                  
-                  
                </div>
                <div class="right-arrow" id="right-arrow">
                   <i class="fas fa-chevron-right"></i>
@@ -164,7 +161,10 @@
             <hr />
             <div class="blogs-container">
                <div class="blog">
-                  <div class='sk-ww-medium-publication-feed' data-embed-id='218097'></div>
+                  <div
+                     class="sk-ww-medium-publication-feed"
+                     data-embed-id="218097"
+                  ></div>
                </div>
                <div class="blog"></div>
             </div>
@@ -176,12 +176,25 @@
             <hr />
             <div class="contact-container">
                <div class="contact-form">
-                  <input type="text" name="name" id="name" placeholder="Enter Your Name">
-                  <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter Your Message..."></textarea>
-                  <button type="button" onclick="sendTelegramMessage()">Send Message <i class="fas fa-paper-plane"></i></button>
+                  <input
+                     type="text"
+                     name="name"
+                     id="name"
+                     placeholder="Enter Your Name"
+                  />
+                  <textarea
+                     name="message"
+                     id="message"
+                     cols="30"
+                     rows="10"
+                     placeholder="Enter Your Message..."
+                  ></textarea>
+                  <button type="button" onclick="sendTelegramMessage()">
+                     Send Message <i class="fas fa-paper-plane"></i>
+                  </button>
                </div>
                <div class="contact-image">
-                  <img src="./assets/contact-me.svg" alt="">
+                  <img src="./assets/contact-me.svg" alt="" />
                </div>
             </div>
          </section>
@@ -191,27 +204,37 @@
       <footer>
          <div class="footer-container">
             <div class="footer-sub-heading">Feel Free to Contact</div>
-            <div class="footer-email"><a href="mailto:abhishek300830@gmail.com">
-               <i class="fas fa-envelope"></i> Abhishek300830@gmail.com
-            </a></div>
+            <div class="footer-email">
+               <a href="mailto:abhishek300830@gmail.com">
+                  <i class="fas fa-envelope"></i> Abhishek300830@gmail.com
+               </a>
+            </div>
             <div class="social-handles">
-               <a href="https://www.linkedin.com/in/abhishek3008/ target="_blank"
+               <a
+                  href="https://www.linkedin.com/in/abhishek3008/"
+                  target="_blank"
                   ><i class="fab fa-linkedin"></i>
                </a>
                <a href="https://github.com/abhishek300830" target="_blank"
                   ><i class="fab fa-github-square"></i>
                </a>
-               <a href="https://x.com/Abhi_gurjarrr?t=P7RkfMoSJy9EwEccimSijg&s=09" target="_blank"
+               <a
+                  href="https://x.com/Abhi_gurjarrr?t=P7RkfMoSJy9EwEccimSijg&s=09"
+                  target="_blank"
                   ><i class="fab fa-twitter-square"></i
                ></a>
             </div>
          </div>
       </footer>
-      <script src="./js/script.js"></script>
       <!-- Typing Role Script starts -->
       <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
       <!-- script for loading Medium Blogs -->
-      <script src='https://widgets.sociablekit.com/medium-publication-feed/widget.js' async defer></script>
+      <script
+         src="https://widgets.sociablekit.com/medium-publication-feed/widget.js"
+         async
+         defer
+      ></script>
 
+      <script type="module" src="./js/script.js"></script>
    </body>
 </html>
